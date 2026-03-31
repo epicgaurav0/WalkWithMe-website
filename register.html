@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Friend | Walk With Me Faridabad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar dark-theme">
+        <a href="index.html" class="logo">
+            <i class="fas fa-walking"></i> Walk With Me
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="services.html" class="nav-item">Activities</a>
+            <a href="rent.html" class="nav-item">Browse Friends</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+            <a href="register.html" class="btn btn-primary">Register Free</a>
+        </div>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="particles-container"></div>
+        <div class="reveal-zoom">
+            <h1>Join the Community</h1>
+            <p>Register as a friend, entirely for free. Help combat loneliness in Faridabad.</p>
+        </div>
+    </header>
+
+    <!-- Registration Form -->
+    <div class="container form-container" id="formCardContainer">
+        <div class="card-form reveal stagger-1" id="formCard">
+            <h2
+                style="margin-bottom: 25px; text-align: center; color: var(--color-teal); font-family: var(--font-display);">
+                Create Your Profile</h2>
+            <form id="registerForm">
+
+                <!-- Personal Info -->
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" required placeholder="e.g. Rahul Sharma">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number (WhatsApp only)</label>
+                        <input type="tel" id="phone" class="form-control" required placeholder="10-digit mobile number"
+                            pattern="[0-9]{10}">
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Age</label>
+                        <input type="number" id="age" class="form-control" required min="18" max="99"
+                            placeholder="E.g. 24">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Gender</label>
+                        <select id="gender" class="form-control" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Area in Faridabad</label>
+                    <select id="area" class="form-control" required>
+                        <option value="">Select Area</option>
+                        <option value="NIT">NIT</option>
+                        <option value="Sector 15">Sector 15</option>
+                        <option value="Sector 21">Sector 21</option>
+                        <option value="Sector 37">Sector 37</option>
+                        <option value="Sector 46">Sector 46</option>
+                        <option value="Old Faridabad">Old Faridabad</option>
+                        <option value="Ballabhgarh">Ballabhgarh</option>
+                        <option value="Surajkund">Surajkund</option>
+                        <option value="Other">Other / Rest of Faridabad</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Short Bio <span id="charCount"
+                            style="float: right; font-weight: normal; font-size: 0.85rem; color: var(--color-coral);">0
+                            / 30 min chars</span></label>
+                    <textarea id="bio" class="form-control" required
+                        placeholder="Tell people about yourself. E.g. Software engineer who loves weekend treks, finding new cafes in NIT, and discussing movies."></textarea>
+                </div>
+
+                <!-- Social Platforms -->
+                <div class="form-group">
+                    <label class="form-label">Social Platforms (Optional)</label>
+                    <div class="form-grid" style="grid-template-columns: 1fr 1fr 1fr;">
+                        <input type="text" id="telegram" class="form-control" placeholder="Telegram Username">
+                        <input type="text" id="snapchat" class="form-control" placeholder="Snapchat ID">
+                        <input type="text" id="instagram" class="form-control" placeholder="Instagram ID">
+                    </div>
+                </div>
+
+                <!-- Interests -->
+                <div class="form-group">
+                    <label class="form-label">Interests & Activities</label>
+                    <div class="tags-container">
+                        <button type="button" class="tag-btn interest-tag" data-val="Cricket">Cricket</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Movies">Movies</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Walking">Walking</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Café Hopping">Café Hopping</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Music">Music</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Gaming">Gaming</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Books">Books</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Art">Art</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Shopping">Shopping</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Gym">Gym</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Dance">Dance</button>
+                        <button type="button" class="tag-btn interest-tag" data-val="Photography">Photography</button>
+                    </div>
+                </div>
+
+                <!-- Availability -->
+                <div class="form-group">
+                    <label class="form-label">Availability</label>
+                    <div class="tags-container">
+                        <button type="button" class="tag-btn day-tag" data-val="Mon">Monday</button>
+                        <button type="button" class="tag-btn day-tag" data-val="Tue">Tuesday</button>
+                        <button type="button" class="tag-btn day-tag" data-val="Wed">Wednesday</button>
+                        <button type="button" class="tag-btn day-tag" data-val="Thu">Thursday</button>
+                        <button type="button" class="tag-btn day-tag" data-val="Fri">Friday</button>
+                        <button type="button" class="tag-btn day-tag" data-val="Sat">Saturday</button>
+                        <button type="button" class="tag-btn day-tag" data-val="Sun">Sunday</button>
+                    </div>
+                </div>
+
+                <!-- Photo Upload -->
+                <div class="form-group">
+                    <label class="form-label">Profile Photo</label>
+                    <div class="photo-upload-box">
+                        <i class="fas fa-camera" style="font-size: 2rem; color: #ccc; margin-bottom: 10px;"></i>
+                        <p style="color: #666;">Click to upload a clear photo of yourself</p>
+                        <input type="file" id="photo" accept="image/*">
+                        <img id="photoPreviewImg" class="photo-preview" src="" alt="Preview">
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; text-align: center;">
+                    <button type="submit" id="submitBtn" class="btn btn-primary"
+                        style="width: 100%; max-width: 300px; font-size: 1.1rem; padding: 16px;">
+                        Complete Registration <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <p style="margin-top: 15px; font-size: 0.9rem; color: #666;"><i class="fas fa-lock"
+                            style="color: #4CAF50;"></i> Your data is safe. We never display phone numbers publicly.</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Success Preview Card -->
+        <div class="success-card reveal-zoom" id="successCard">
+            <i class="fas fa-check-circle" style="font-size: 4rem; color: #4CAF50; margin-bottom: 20px;"></i>
+            <h2 style="font-family: var(--font-display); color: var(--color-teal); margin-bottom: 30px;">Profile
+                Published!</h2>
+
+            <div
+                style="background: #FAFAFA; border: 2px solid #EEE; padding: 30px; border-radius: 15px; text-align: center;">
+                <img id="previewPhoto" class="preview-photo" src="" alt="">
+                <h3 id="previewName"
+                    style="font-family: var(--font-display); color: var(--color-teal); margin-bottom: 5px;"></h3>
+                <p id="previewDetails" style="color: #666; font-size: 0.9rem; margin-bottom: 15px;"></p>
+                <div id="previewTags" style="margin-bottom: 15px;"></div>
+                <p id="previewBio" style="font-style: italic; color: #555; font-size: 0.95rem;"></p>
+            </div>
+
+            <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center;">
+                <a href="rent.html" class="btn btn-primary">Browse Other Friends</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-walking"></i> WalkWith<span>Me</span>
+                    </div>
+                    <p class="footer-text"><strong style="color: var(--color-amber);">Never Be Alone.</strong> A 100%
+                        free community initiative to combat loneliness and bring the people of
+                        Faridabad together. Connect, Hangout, and Chill.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Activities</a></li>
+                        <li><a href="rent.html">Browse Friends</a></li>
+                        <li><a href="register.html">Register Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Sector 15, Faridabad, Haryana</li>
+                        <li><i class="fas fa-envelope"></i> hello@walkwithme-fbd.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +91 98765 43210 (WhatsApp Only)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Walk With Me Faridabad. A Free Community Service. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

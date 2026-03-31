@@ -1,0 +1,165 @@
+[
+    {
+        "id": "1",
+        "name": "Aman Sharma",
+        "age": 24,
+        "gender": "Male",
+        "area": "NIT",
+        "bio": "Love exploring local cafes and talking about startup ideas.",
+        "socials": {
+            "instagram": "amansharma",
+            "telegram": "aman_fbd"
+        },
+        "interests": [
+            "Café Hopping",
+            "Books"
+        ],
+        "availability": [
+            "Sat",
+            "Sun"
+        ],
+        "photo": "https://images.unsplash.com/photo-1542369796-0c8413a968eb?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.9,
+        "reviews": 12
+    },
+    {
+        "id": "2",
+        "name": "Priya Verma",
+        "age": 22,
+        "gender": "Female",
+        "area": "Sector 15",
+        "bio": "Looking for walking buddies around Town Park.",
+        "socials": {
+            "snapchat": "priya.verma22"
+        },
+        "interests": [
+            "Walking",
+            "Shopping"
+        ],
+        "availability": [
+            "Mon",
+            "Wed",
+            "Fri"
+        ],
+        "photo": "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.8,
+        "reviews": 8
+    },
+    {
+        "id": "3",
+        "name": "Rahul Yadav",
+        "age": 26,
+        "gender": "Male",
+        "area": "Sector 46",
+        "bio": "Die-hard cricket fan. Let's catch a match or hit the gym.",
+        "interests": [
+            "Cricket",
+            "Gym"
+        ],
+        "availability": [
+            "Sun"
+        ],
+        "photo": "https://images.unsplash.com/photo-1590422749964-b1eb211af9bd?w=500&auto=format&fit=crop&q=60",
+        "rating": 5.0,
+        "reviews": 21
+    },
+    {
+        "id": "4",
+        "name": "Neha Rajput",
+        "age": 25,
+        "gender": "Female",
+        "area": "Sector 21",
+        "bio": "Software dev looking for study/work buddies. Quiet cafes prefered.",
+        "interests": [
+            "Books",
+            "Café Hopping"
+        ],
+        "availability": [
+            "Sat",
+            "Sun"
+        ],
+        "photo": "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.7,
+        "reviews": 15
+    },
+    {
+        "id": "5",
+        "name": "Karan Bhatia",
+        "age": 21,
+        "gender": "Male",
+        "area": "Old Faridabad",
+        "bio": "Foodie! Can show you the best street food spots.",
+        "interests": [
+            "Movies",
+            "Photography"
+        ],
+        "availability": [
+            "Tue",
+            "Thu"
+        ],
+        "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.6,
+        "reviews": 9
+    },
+    {
+        "id": "6",
+        "name": "Sneha Das",
+        "age": 23,
+        "gender": "Female",
+        "area": "Surajkund",
+        "bio": "Love the outdoors! Looking for morning walk peers near Surajkund.",
+        "interests": [
+            "Walking",
+            "Dance"
+        ],
+        "availability": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+        ],
+        "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.9,
+        "reviews": 32
+    },
+    {
+        "id": "7",
+        "name": "Vikram Singh",
+        "age": 28,
+        "gender": "Male",
+        "area": "Ballabhgarh",
+        "bio": "Gamer and coffee enthusiast. Seeking someone to chill out.",
+        "interests": [
+            "Gaming",
+            "Café Hopping"
+        ],
+        "availability": [
+            "Sat",
+            "Sun"
+        ],
+        "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.5,
+        "reviews": 5
+    },
+    {
+        "id": "8",
+        "name": "Aditi Jain",
+        "age": 22,
+        "gender": "Female",
+        "area": "Sector 37",
+        "bio": "Need a shopping buddy for Crown Interiorz or just a friend.",
+        "interests": [
+            "Shopping",
+            "Art"
+        ],
+        "availability": [
+            "Thu",
+            "Fri",
+            "Sat"
+        ],
+        "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60",
+        "rating": 4.8,
+        "reviews": 18
+    }
+]

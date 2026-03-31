@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Friends | Walk With Me Faridabad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar dark-theme">
+        <a href="index.html" class="logo"><i class="fas fa-walking"></i> Walk With Me</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="services.html" class="nav-item">Activities</a>
+            <a href="rent.html" class="nav-item active">Browse Friends</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+            <a href="register.html" class="btn btn-primary">Register Free</a>
+        </div>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- Hero -->
+    <header class="page-hero">
+        <div class="particles-container"></div>
+        <div class="reveal-zoom">
+            <h1>Find Your Vibe</h1>
+            <p>Browse through hundreds of locals ready to hang out in Faridabad.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Toolbar -->
+        <div class="toolbar reveal stagger-1">
+            <div class="filter-group">
+                <button class="filter-btn active" data-gender="All">All Voids</button>
+                <button class="filter-btn" data-gender="Male">Male</button>
+                <button class="filter-btn" data-gender="Female">Female</button>
+            </div>
+
+            <div class="search-box">
+                <i class="fas fa-search" style="color: #999;"></i>
+                <input type="text" id="searchInput" placeholder="Search by name, interest...">
+            </div>
+
+            <div class="filter-group">
+                <select id="filterArea" class="select-styled">
+                    <option value="">All Areas</option>
+                    <option value="NIT">NIT</option>
+                    <option value="Sector 15">Sector 15</option>
+                    <option value="Sector 21">Sector 21</option>
+                    <option value="Sector 37">Sector 37</option>
+                    <option value="Sector 46">Sector 46</option>
+                    <option value="Old Faridabad">Old Faridabad</option>
+                    <option value="Ballabhgarh">Ballabhgarh</option>
+                    <option value="Surajkund">Surajkund</option>
+                </select>
+                <select id="sortSelect" class="select-styled">
+                    <option value="rating">Highest Rated</option>
+                    <option value="reviews">Most Reviews</option>
+                    <option value="age-asc">Youngest First</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="resultsCount" style="text-align: center; margin-bottom: 30px; color: #666; font-weight: 500;">Loading
+            Friends...</p>
+
+        <!-- Dynamic Grid -->
+        <div class="grid grid-3" id="friendsGrid" style="margin-bottom: 80px;">
+            <!-- Rendered via JS -->
+        </div>
+    </div>
+
+    <!-- Modal for Request -->
+    <div class="modal-overlay" id="requestModal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+
+            <div class="modal-left">
+                <img src="" id="modalProfileImg" class="modal-profile-img" alt="Profile">
+                <h2 id="modalName"
+                    style="font-family: var(--font-display); color: var(--color-teal); margin-bottom: 5px;">-</h2>
+                <div id="modalDetails" style="color: #666; margin-bottom: 10px;">- • -</div>
+                <div id="modalRating" class="rating" style="margin-bottom: 20px;">-</div>
+
+                <div id="modalSocials" style="margin-bottom: 20px; display: flex; justify-content: center; gap: 15px;">
+                </div>
+
+                <h4 style="margin-bottom: 15px; width: 100%; text-align: left;">Interests</h4>
+                <div id="modalInterests" class="tags-row" style="justify-content: center; width: 100%;">
+                    <!-- Rendered via JS -->
+                </div>
+            </div>
+
+            <div class="modal-right">
+                <h3
+                    style="font-family: var(--font-display); color: var(--color-teal); margin-bottom: 20px; border-bottom: 2px solid #EEE; padding-bottom: 10px;">
+                    Send a Request</h3>
+                <form id="requestForm">
+                    <div class="form-group">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" id="reqName" class="form-control" required
+                            placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Your WhatsApp Number</label>
+                        <input type="tel" id="reqPhone" class="form-control" required placeholder="10-digit number"
+                            pattern="[0-9]{10}">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Proposed Date</label>
+                        <input type="date" id="reqDate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Activity Wanted</label>
+                        <select id="reqActivity" class="form-control" required>
+                            <option value="">Select Activity</option>
+                            <option value="Evening Walk">Evening Walk</option>
+                            <option value="Movie">Movie Watch</option>
+                            <option value="Cafe Date">Café Meetup</option>
+                            <option value="Mall Hangout">Mall Window Shopping</option>
+                            <option value="Study Buddy">Study / Work Companion</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; font-size: 1.1rem; padding: 15px; margin-top: 10px;">Send Fast Request
+                        🤝</button>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 15px; text-align: center;"><i
+                            class="fas fa-info-circle"></i> We will message both of you on WhatsApp to confirm the
+                        hangout.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-walking"></i> WalkWith<span>Me</span>
+                    </div>
+                    <p class="footer-text"><strong style="color: var(--color-amber);">Never Be Alone.</strong> A 100%
+                        free community initiative to combat loneliness and bring the people of Faridabad together.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Walk With Me Faridabad. A Free Community Service. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/rent.js"></script>
+</body>
+
+</html>

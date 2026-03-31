@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Walk With Me Faridabad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar dark-theme">
+        <a href="index.html" class="logo"><i class="fas fa-walking"></i> Walk With Me</a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="services.html" class="nav-item">Activities</a>
+            <a href="rent.html" class="nav-item">Browse Friends</a>
+            <a href="contact.html" class="nav-item active">Contact</a>
+            <a href="register.html" class="btn btn-primary">Register Free</a>
+        </div>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="particles-container"></div>
+        <div class="reveal-zoom">
+            <h1>Get in Touch</h1>
+            <p>Have a question or want to report an issue? The locals are here to help.</p>
+        </div>
+    </header>
+
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="contact-grid">
+
+            <!-- Contact Form -->
+            <div class="card-form reveal-left">
+                <h2 style="font-family: var(--font-display); color: var(--color-teal); margin-bottom: 10px;">Send a
+                    Message</h2>
+                <p style="color: #666; margin-bottom: 30px;">We usually reply within 24 hours.</p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email / Phone</label>
+                        <input type="text" class="form-control" required placeholder="How do we reach you?">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" required placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-card reveal-right">
+                <h2 style="font-family: var(--font-display); margin-bottom: 40px; color: #fff;">Contact Information</h2>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Central Hub</h4>
+                        <p>Sector 15 Market, Faridabad<br>Haryana 121007</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp Support</h4>
+                        <p>+91 98765 43210<br><span style="font-size: 0.85rem; opacity: 0.7;">(Calls outside working
+                                hours will go to voicemail)</span></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>hello@walkwithme-fbd.com<br>support@walkwithme-fbd.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Community Hours</h4>
+                        <p>Monday - Sunday<br>10:00 AM - 08:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Google Map iframe for Faridabad -->
+        <div class="map-container reveal-zoom">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112328.71887640096!2d77.23432742125712!3d28.384594272183204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdbbedaaaaaab%3A0xb304ef2ba598813a!2sFaridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-walking"></i> WalkWith<span>Me</span>
+                    </div>
+                    <p class="footer-text"><strong style="color: var(--color-amber);">Never Be Alone.</strong> A 100%
+                        free community initiative to combat loneliness and bring the people of Faridabad together.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rent.html">Browse Friends</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Walk With Me Faridabad. A Free Community Service. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
